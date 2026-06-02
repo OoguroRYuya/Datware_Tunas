@@ -1,0 +1,108 @@
+LAPORAN DATA TENANT KAWASAN INDUSTRI TUNAS BATAM
+Periode Ekspor Laporan: Mei 2026
+
+tenant_id,nama_perusahaan,sektor_industri,asal_negara
+1,PT Saefullah Batam,Marine/Shipyard,Indonesia (Lokal Batam)
+2,PT Prasasta Indonesia,Logistik,Singapura
+3,CV Jailani Wastuti Batam,Plastik & Molding,Indonesia (Lokal Batam)
+4,PT Palastri Indonesia,Manufaktur,Singapura
+5,PT Irawan Indonesia,Plastik & Molding,Singapura
+6,PT Rahayu Indonesia,Otomotif,Singapura
+7,PT Anggraini Indonesia,Manufaktur,Singapura
+8,PT Firmansyah Indonesia,Logistik,Singapura
+9,PT Dabukke Indonesia,mnfktur,Jepang
+10,PT Iswahyudi Indonesia,Plastik & Molding,Malaysia
+11,CV Mayasari Suartini Batam,Plastik & Molding,Indonesia (Lokal Batam)
+12,PT Dongoran Indonesia,Plastik & Molding,Malaysia
+13,PT Purwanti Indonesia,Elektronik,Korea Selatan
+14,PT Napitupulu Indonesia,Marine/Shipyard,Singapura
+15,CV Hassanah Rahmawati Tbk Batam,Logistik,Indonesia (Lokal Batam)
+16,PT Ardianto Indonesia,Elektronik,Singapura
+17,PT Manullang Indonesia,Elektronik,Taiwan
+18,PT Anggraini Indonesia,Plastik & Molding,Taiwan
+19,PT Siregar Indonesia,Logistik,Jepang
+20,PT Setiawan Indonesia,Marine/Shipyard,Taiwan
+21,PT Mangunsong Indonesia,Manufaktur,Singapura
+22,PT Pratama Indonesia,Otomotif,Malaysia
+23,PT Sirait Indonesia,Plastik & Molding,Taiwan
+24,PT Jailani Indonesia,Otomotif,Taiwan
+25,PT Iswahyudi Indonesia,Logistik,Taiwan
+26,PT Wibowo Indonesia,Plastik & Molding,Jepang
+27,PT Kuswoyo Indonesia,Logistik,Singapura
+28,UD Suartini Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+29,PT Gunawan Indonesia,Marine/Shipyard,Jepang
+30,PT Haryanti Indonesia,Plastik & Molding,Jepang
+31,PT Nasyiah Indonesia,Manufaktur,Taiwan
+32,PT Maheswara Indonesia,Plastik & Molding,Malaysia
+33,,Elektronik,Jepang
+34,PT Hutapea Indonesia,Marine/Shipyard,Taiwan
+35,PT Puspasari Indonesia,Logistik,Korea Selatan
+36,PT Sihombing Indonesia,Elektronik,Taiwan
+37,PT Utami Indonesia,Elektronik,Singapura
+38,Perum Nababan (Persero) Tbk Batam,Plastik & Molding,Indonesia (Lokal Batam)
+39,PT Gunawan Indonesia,Manufaktur,Malaysia
+40,PT Wijayanti Indonesia,elektronika,Singapura
+41,UD Hutapea Pradipta Batam,Manufaktur,Indonesia (Lokal Batam)
+42,PT Januar Indonesia,Plastik & Molding,Singapura
+43,PT Wibowo Indonesia,Plastik & Molding,Singapura
+44,PT Setiawan Indonesia,Otomotif,Singapura
+45,PT Hasanah Indonesia,Marine/Shipyard,Singapura
+46,PT Usada Indonesia,Marine/Shipyard,Taiwan
+47,CV Uwais Tbk Batam,Otomotif,Indonesia (Lokal Batam)
+48,PT Pranowo Indonesia,Manufaktur,Korea Selatan
+49,PT Sudiati (Persero) Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+50,CV Hariyah Wibowo Batam,Manufaktur,Indonesia (Lokal Batam)
+51,PT Saputra Indonesia,Logistik,Malaysia
+52,PT Uyainah Indonesia,Logistik,Taiwan
+53,PT Puspita Indonesia,Otomotif,Singapura
+54,UD Hakim Pradana Batam,LOGISTIK ,Indonesia (Lokal Batam)
+55,PT Firmansyah Indonesia,Otomotif,Jepang
+56,PT Sihotang Indonesia,Marine/Shipyard,Taiwan
+57,PT Wacana Indonesia,Otomotif,Taiwan
+58,PT Santoso Indonesia,Logistik,Singapura
+59,PT Haryanto Indonesia,Otomotif,Singapura
+60,PT Prabowo Indonesia,Manufaktur,Jepang
+61,CV Yolanda Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+62,PD Megantara Saptono (Persero) Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+63,PT Prayoga Indonesia,Logistik,Jepang
+64,,Otomotif,Indonesia (Lokal Batam)
+65,PT Tarihoran Indonesia,Otomotif,Malaysia
+66,PT Prasetya Indonesia,Elektronik,Jepang
+67,PT Mandala Indonesia,Plastik & Molding,Taiwan
+68,PT Melani Indonesia,Elektronik,Singapura
+69,PT Hardiansyah Kusumo (Persero) Tbk Batam,Plastik & Molding,Indonesia (Lokal Batam)
+70,PT Utami Indonesia,Plastik & Molding,Jepang
+71,PD Riyanti Haryanto Batam,Logistik,Indonesia (Lokal Batam)
+72,PD Riyanti Hastuti Tbk Batam,Logistik,Indonesia (Lokal Batam)
+73,PT Puspasari Indonesia,Logistik,Jepang
+74,PT Anggriawan Indonesia,Logistik,Korea Selatan
+75,PT Zulaika Indonesia,Otomotif,Taiwan
+76,PT Latupono Indonesia,Elektronik,Singapura
+77,PT Zulaika Indonesia,Elektronik,Jepang
+78,PT Nasyiah Indonesia,Otomotif,Malaysia
+79,PT Santoso Indonesia,Manufaktur,Jepang
+80,PT Sihombing Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+81,PT Manullang Indonesia,Logistik,Malaysia
+82,PT Hasanah Indonesia,Elektronik,Malaysia
+83,PT Adriansyah Indonesia,Marine/Shipyard,Malaysia
+84,PT Saptono Indonesia,Marine/Shipyard,Korea Selatan
+85,PT Mardhiyah Indonesia,Elektronik,Taiwan
+86,Perum Kurniawan Utami Batam,Elektronik,Indonesia (Lokal Batam)
+87,PT Salahudin Indonesia,Logistik,Malaysia
+88,PT Uyainah Indonesia,Elektronik,Singapura
+89,PT Mayasari Indonesia,Plastik & Molding,Jepang
+90,CV Wahyudin Marpaung Batam,Manufaktur,Indonesia (Lokal Batam)
+91,Perum Sinaga Batam,Manufaktur,Indonesia (Lokal Batam)
+92,PT Lestari Indonesia,Elektronik,Singapura
+93,PT Budiyanto Indonesia,Otomotif,Korea Selatan
+94,PT Kusumo Indonesia,Marine/Shipyard,Singapura
+95,PT Tarihoran Indonesia,Plastik & Molding,Korea Selatan
+96,PT Samosir Indonesia,Elektronik,Malaysia
+97,PT Permadi Indonesia,Manufaktur,Malaysia
+98,PT Hakim Indonesia,Manufaktur,Malaysia
+99,PT Permadi Indonesia,Otomotif,Korea Selatan
+100,PT Purnawati Indonesia,Logistik,Singapura
+
+--- AKHIR LAPORAN TENANT ---
+Total Tenant Terdaftar: 100
+Dicetak secara otomatis oleh sistem master data.

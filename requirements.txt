@@ -1,0 +1,5 @@
+pandas
+faker
+sqlalchemy
+python-dotenv
+psycopg2-binary
