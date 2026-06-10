@@ -188,16 +188,74 @@ df_waktu['hari'] = df_waktu['tanggal_tagihan'].dt.day_name()
 df_waktu['tahun'] = df_waktu['tanggal_tagihan'].dt.year
 df_waktu['id_waktu'] = range(1, len(df_waktu) + 1)
 
-# Dim_Unit_Properti: Generate dummy properti (20 unit sesuai transaksi)
+# Dim_Unit_Properti: Generate dummy properti (332 unit)
 random.seed(42)  # Konsistensi data properti setiap run
+
+prop_ids = []
+kode_bloks = []
+tipe_units = []
+luas_tanahs = []
+luas_bangunans = []
+kapasitas_listriks = []
+
+# Generate 250 Factory/Warehouse units
+for i in range(1, 251):
+    prop_ids.append(i)
+    # Block codes: Blok A to Blok J
+    block_char = chr(65 + (i % 10))  # A-J
+    kode_bloks.append(f"Blok {block_char}-{i}")
+    
+    tipe = random.choice(['Pabrik Besar', 'Pabrik Sedang', 'Gudang Logistik'])
+    tipe_units.append(tipe)
+    
+    if tipe == 'Pabrik Besar':
+        lt = round(random.uniform(2500, 5000), 2)
+        lb = round(random.uniform(2000, lt - 100), 2)
+        cap = random.choice([50000, 100000, 150000])
+    elif tipe == 'Pabrik Sedang':
+        lt = round(random.uniform(1000, 2500), 2)
+        lb = round(random.uniform(800, lt - 50), 2)
+        cap = random.choice([22000, 33000, 50000])
+    else: # Gudang Logistik
+        lt = round(random.uniform(800, 2000), 2)
+        lb = round(random.uniform(600, lt - 50), 2)
+        cap = random.choice([10000, 22000, 33000])
+        
+    luas_tanahs.append(lt)
+    luas_bangunans.append(lb)
+    kapasitas_listriks.append(cap)
+
+# Generate 82 Ruko/Commercial units
+for i in range(251, 333):
+    prop_ids.append(i)
+    # Block codes: Bizpark-1 to Bizpark-50, Blok K-1 to K-16, Blok L-1 to L-16
+    if i <= 300:
+        kode_bloks.append(f"Bizpark-{i - 250}")
+    elif i <= 316:
+        kode_bloks.append(f"Blok K-{i - 300}")
+    else:
+        kode_bloks.append(f"Blok L-{i - 316}")
+        
+    tipe = random.choice(['Ruko Komersial', 'Kios Bisnis'])
+    tipe_units.append(tipe)
+    
+    lt = round(random.uniform(100, 250), 2)
+    lb = round(random.uniform(80, lt - 20), 2)
+    cap = random.choice([2200, 3500, 4400, 6600])
+    
+    luas_tanahs.append(lt)
+    luas_bangunans.append(lb)
+    kapasitas_listriks.append(cap)
+
 df_properti = pd.DataFrame({
-    'id_properti': range(1, 21),
-    'kode_blok': [f"Blok {chr(65 + (i % 5))}-{i}" for i in range(1, 21)],
-    'tipe_unit': ['Pabrik Besar', 'Gudang Logistik', 'Ruko Komersial'] * 6 + ['Pabrik Besar', 'Gudang Logistik'],
-    'luas_tanah': [round(random.uniform(500, 2000), 2) for _ in range(20)],
-    'luas_bangunan': [round(random.uniform(400, 1500), 2) for _ in range(20)],
-    'kapasitas_listrik': [random.choice([10000, 22000, 50000]) for _ in range(20)]
+    'id_properti': prop_ids,
+    'kode_blok': kode_bloks,
+    'tipe_unit': tipe_units,
+    'luas_tanah': luas_tanahs,
+    'luas_bangunan': luas_bangunans,
+    'kapasitas_listrik': kapasitas_listriks
 })
+
 
 # --- E. Mapping Foreign Key untuk Fact_Transaksi ---
 df_transaksi_clean = df_transaksi_clean.merge(

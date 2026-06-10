@@ -8,101 +8,151 @@ tenant_id,nama_perusahaan,sektor_industri,asal_negara
 4,PT Palastri Indonesia,Manufaktur,Singapura
 5,PT Irawan Indonesia,Plastik & Molding,Singapura
 6,PT Rahayu Indonesia,Otomotif,Singapura
-7,PT Anggraini Indonesia,Manufaktur,Singapura
-8,PT Firmansyah Indonesia,Logistik,Singapura
-9,PT Dabukke Indonesia,mnfktur,Jepang
-10,PT Iswahyudi Indonesia,Plastik & Molding,Malaysia
-11,CV Mayasari Suartini Batam,Plastik & Molding,Indonesia (Lokal Batam)
-12,PT Dongoran Indonesia,Plastik & Molding,Malaysia
-13,PT Purwanti Indonesia,Elektronik,Korea Selatan
-14,PT Napitupulu Indonesia,Marine/Shipyard,Singapura
-15,CV Hassanah Rahmawati Tbk Batam,Logistik,Indonesia (Lokal Batam)
-16,PT Ardianto Indonesia,Elektronik,Singapura
-17,PT Manullang Indonesia,Elektronik,Taiwan
-18,PT Anggraini Indonesia,Plastik & Molding,Taiwan
-19,PT Siregar Indonesia,Logistik,Jepang
-20,PT Setiawan Indonesia,Marine/Shipyard,Taiwan
-21,PT Mangunsong Indonesia,Manufaktur,Singapura
-22,PT Pratama Indonesia,Otomotif,Malaysia
-23,PT Sirait Indonesia,Plastik & Molding,Taiwan
-24,PT Jailani Indonesia,Otomotif,Taiwan
-25,PT Iswahyudi Indonesia,Logistik,Taiwan
-26,PT Wibowo Indonesia,Plastik & Molding,Jepang
-27,PT Kuswoyo Indonesia,Logistik,Singapura
-28,UD Suartini Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
-29,PT Gunawan Indonesia,Marine/Shipyard,Jepang
-30,PT Haryanti Indonesia,Plastik & Molding,Jepang
-31,PT Nasyiah Indonesia,Manufaktur,Taiwan
-32,PT Maheswara Indonesia,Plastik & Molding,Malaysia
+7,PT Dabukke Iswahyudi (Persero) Tbk Batam,Jasa & Ritel,Indonesia (Lokal Batam)
+8,PT Pradipta Indonesia,Otomotif,Malaysia
+9,PT Mayasari Indonesia,Jasa & Ritel,Malaysia
+10,PT Suartini Indonesia,Elektronik,Malaysia
+11,PT Dongoran Indonesia,Marine/Shipyard,Jepang
+12,Perum Andriani Prasetya Batam,Otomotif,Indonesia (Lokal Batam)
+13,PT Hassanah Indonesia,Plastik & Molding,Malaysia
+14,PT Rahmawati Indonesia,Manufaktur,Taiwan
+15,PT Setiawan Indonesia,Manufaktur,Singapura
+16,PT Ardianto Indonesia,Otomotif,Taiwan
+17,PT Manullang Indonesia,Elektronik,Singapura
+18,PT Anggraini Indonesia,Marine/Shipyard,Taiwan
+19,PT Siregar Indonesia,Plastik & Molding,Taiwan
+20,PT Setiawan Indonesia,Elektronik,Taiwan
+21,CV Sirait Jailani Batam,Elektronik,Indonesia (Lokal Batam)
+22,PT Iswahyudi Indonesia,Elektronik,Jepang
+23,PT Wibowo Indonesia,Plastik & Molding,Taiwan
+24,PT Kuswoyo Indonesia,Otomotif,Taiwan
+25,PT Tamba Indonesia,Logistik,Taiwan
+26,PT Situmorang Indonesia,Plastik & Molding,Jepang
+27,PT Suartini Indonesia,Logistik,Singapura
+28,PT Haryanti (Persero) Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+29,PT Waluyo Indonesia,Marine/Shipyard,Jepang
+30,PT Hutapea Indonesia,Plastik & Molding,Jepang
+31,Perum Tarihoran (Persero) Tbk Batam,Jasa & Ritel,Indonesia (Lokal Batam)
+32,PT Hidayat Indonesia,Plastik & Molding,Malaysia
 33,,Elektronik,Jepang
-34,PT Hutapea Indonesia,Marine/Shipyard,Taiwan
-35,PT Puspasari Indonesia,Logistik,Korea Selatan
-36,PT Sihombing Indonesia,Elektronik,Taiwan
-37,PT Utami Indonesia,Elektronik,Singapura
-38,Perum Nababan (Persero) Tbk Batam,Plastik & Molding,Indonesia (Lokal Batam)
-39,PT Gunawan Indonesia,Manufaktur,Malaysia
-40,PT Wijayanti Indonesia,elektronika,Singapura
-41,UD Hutapea Pradipta Batam,Manufaktur,Indonesia (Lokal Batam)
-42,PT Januar Indonesia,Plastik & Molding,Singapura
-43,PT Wibowo Indonesia,Plastik & Molding,Singapura
-44,PT Setiawan Indonesia,Otomotif,Singapura
-45,PT Hasanah Indonesia,Marine/Shipyard,Singapura
-46,PT Usada Indonesia,Marine/Shipyard,Taiwan
-47,CV Uwais Tbk Batam,Otomotif,Indonesia (Lokal Batam)
-48,PT Pranowo Indonesia,Manufaktur,Korea Selatan
-49,PT Sudiati (Persero) Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
-50,CV Hariyah Wibowo Batam,Manufaktur,Indonesia (Lokal Batam)
-51,PT Saputra Indonesia,Logistik,Malaysia
-52,PT Uyainah Indonesia,Logistik,Taiwan
-53,PT Puspita Indonesia,Otomotif,Singapura
-54,UD Hakim Pradana Batam,LOGISTIK ,Indonesia (Lokal Batam)
-55,PT Firmansyah Indonesia,Otomotif,Jepang
-56,PT Sihotang Indonesia,Marine/Shipyard,Taiwan
-57,PT Wacana Indonesia,Otomotif,Taiwan
-58,PT Santoso Indonesia,Logistik,Singapura
-59,PT Haryanto Indonesia,Otomotif,Singapura
-60,PT Prabowo Indonesia,Manufaktur,Jepang
-61,CV Yolanda Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
-62,PD Megantara Saptono (Persero) Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
-63,PT Prayoga Indonesia,Logistik,Jepang
-64,,Otomotif,Indonesia (Lokal Batam)
-65,PT Tarihoran Indonesia,Otomotif,Malaysia
-66,PT Prasetya Indonesia,Elektronik,Jepang
-67,PT Mandala Indonesia,Plastik & Molding,Taiwan
-68,PT Melani Indonesia,Elektronik,Singapura
-69,PT Hardiansyah Kusumo (Persero) Tbk Batam,Plastik & Molding,Indonesia (Lokal Batam)
-70,PT Utami Indonesia,Plastik & Molding,Jepang
-71,PD Riyanti Haryanto Batam,Logistik,Indonesia (Lokal Batam)
-72,PD Riyanti Hastuti Tbk Batam,Logistik,Indonesia (Lokal Batam)
-73,PT Puspasari Indonesia,Logistik,Jepang
-74,PT Anggriawan Indonesia,Logistik,Korea Selatan
-75,PT Zulaika Indonesia,Otomotif,Taiwan
-76,PT Latupono Indonesia,Elektronik,Singapura
-77,PT Zulaika Indonesia,Elektronik,Jepang
-78,PT Nasyiah Indonesia,Otomotif,Malaysia
-79,PT Santoso Indonesia,Manufaktur,Jepang
-80,PT Sihombing Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
-81,PT Manullang Indonesia,Logistik,Malaysia
-82,PT Hasanah Indonesia,Elektronik,Malaysia
-83,PT Adriansyah Indonesia,Marine/Shipyard,Malaysia
-84,PT Saptono Indonesia,Marine/Shipyard,Korea Selatan
-85,PT Mardhiyah Indonesia,Elektronik,Taiwan
-86,Perum Kurniawan Utami Batam,Elektronik,Indonesia (Lokal Batam)
-87,PT Salahudin Indonesia,Logistik,Malaysia
-88,PT Uyainah Indonesia,Elektronik,Singapura
-89,PT Mayasari Indonesia,Plastik & Molding,Jepang
-90,CV Wahyudin Marpaung Batam,Manufaktur,Indonesia (Lokal Batam)
-91,Perum Sinaga Batam,Manufaktur,Indonesia (Lokal Batam)
-92,PT Lestari Indonesia,Elektronik,Singapura
-93,PT Budiyanto Indonesia,Otomotif,Korea Selatan
-94,PT Kusumo Indonesia,Marine/Shipyard,Singapura
-95,PT Tarihoran Indonesia,Plastik & Molding,Korea Selatan
-96,PT Samosir Indonesia,Elektronik,Malaysia
-97,PT Permadi Indonesia,Manufaktur,Malaysia
-98,PT Hakim Indonesia,Manufaktur,Malaysia
-99,PT Permadi Indonesia,Otomotif,Korea Selatan
-100,PT Purnawati Indonesia,Logistik,Singapura
+34,PT Wijayanti Indonesia,Marine/Shipyard,Taiwan
+35,PT Pradana Indonesia,Logistik,Korea Selatan
+36,PT Siregar Indonesia,Elektronik,Taiwan
+37,PT Hutapea Indonesia,Elektronik,Singapura
+38,PT Wibowo Setiawan Batam,Plastik & Molding,Indonesia (Lokal Batam)
+39,PT Hasanah Indonesia,Manufaktur,Malaysia
+40,PT Usada Indonesia,elektronika,Singapura
+41,CV Uwais Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+42,PT Pranowo Indonesia,Jasa & Ritel,Korea Selatan
+43,PT Winarsih Indonesia,Otomotif,Korea Selatan
+44,PT Santoso Indonesia,Plastik & Molding,Jepang
+45,PT Zulaika Indonesia,Jasa & Ritel,Taiwan
+46,PT Yuliarti Indonesia,Otomotif,Taiwan
+47,PT Hidayanto Indonesia,Plastik & Molding,Jepang
+48,Perum Prasasta Marpaung Batam,Elektronik,Indonesia (Lokal Batam)
+49,PD Saputra Uyainah (Persero) Tbk Batam,LOGISTIK ,Indonesia (Lokal Batam)
+50,PT Pradana (Persero) Tbk Batam,Logistik,Indonesia (Lokal Batam)
+51,PT Sihotang Indonesia,Manufaktur,Korea Selatan
+52,PT Wacana Indonesia,Logistik,Korea Selatan
+53,PT Santoso Indonesia,Plastik & Molding,Korea Selatan
+54,PT Haryanto Indonesia,Jasa & Ritel,Jepang
+55,PT Prabowo Indonesia,Otomotif,Malaysia
+56,CV Yolanda Tbk Batam,Marine/Shipyard,Indonesia (Lokal Batam)
+57,PD Megantara Saptono (Persero) Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+58,Perum Nasyiah Saptono Batam,Jasa & Ritel,Indonesia (Lokal Batam)
+59,PT Padmasari Indonesia,Otomotif,Singapura
+60,Perum Wacana Tarihoran (Persero) Tbk Batam,Logistik,Indonesia (Lokal Batam)
+61,Perum Lailasari Iswahyudi Batam,Plastik & Molding,Indonesia (Lokal Batam)
+62,PT Mangunsong Batam,Jasa & Ritel,Indonesia (Lokal Batam)
+63,PT Utami Indonesia,Jasa & Ritel,Singapura
+64,PT Manullang Indonesia,Logistik,Jepang
+65,PT Zulaika Indonesia,Manufaktur,Jepang
+66,PT Anggraini Indonesia,Otomotif,Malaysia
+67,PT Riyanti Indonesia,Jasa & Ritel,Korea Selatan
+68,PT Haryanto Indonesia,Logistik,Malaysia
+69,PT Winarno Indonesia,Marine/Shipyard,Korea Selatan
+70,PT Wibowo Indonesia,Manufaktur,Korea Selatan
+71,PT Riyanti Indonesia,Plastik & Molding,Singapura
+72,PT Hastuti Indonesia,Jasa & Ritel,Singapura
+73,PT Nuraini Indonesia,Jasa & Ritel,Singapura
+74,PT Ramadan Indonesia,Plastik & Molding,Singapura
+75,PT Puspasari Indonesia,Manufaktur,Jepang
+76,PT Anggriawan Indonesia,Elektronik,Malaysia
+77,PT Zulaika Indonesia,Logistik,Malaysia
+78,PT Latupono Indonesia,Elektronik,Jepang
+79,UD Kusumo Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+80,CV Hasanah Adriansyah Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+81,PT Mardhiyah Indonesia,Logistik,Malaysia
+82,PT Nugroho Indonesia,Elektronik,Malaysia
+83,PT Mayasari Indonesia,Marine/Shipyard,Malaysia
+84,PT Kurniawan Indonesia,Marine/Shipyard,Korea Selatan
+85,PT Utami Indonesia,Elektronik,Taiwan
+86,Perum Sudiati (Persero) Tbk Batam,Elektronik,Indonesia (Lokal Batam)
+87,PT Mangunsong Indonesia,Logistik,Malaysia
+88,PT Wahyudin Indonesia,Elektronik,Singapura
+89,PT Marpaung Indonesia,Plastik & Molding,Jepang
+90,Perum Sinaga Batam,Manufaktur,Indonesia (Lokal Batam)
+91,PT Kusumo Tarihoran Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+92,PT Permadi Indonesia,Elektronik,Singapura
+93,PT Hakim Indonesia,Otomotif,Korea Selatan
+94,PT Permadi Indonesia,Marine/Shipyard,Singapura
+95,PT Purnawati Indonesia,Plastik & Molding,Korea Selatan
+96,PT Hutapea Indonesia,Elektronik,Malaysia
+97,PD Hidayat Batam,Jasa & Ritel,Indonesia (Lokal Batam)
+98,PT Nasyidah Indonesia,Logistik,Taiwan
+99,PT Mahendra Indonesia,Jasa & Ritel,Jepang
+100,PT Mahendra Indonesia,Logistik,Singapura
+101,Perum Marbun Saptono Tbk Batam,Otomotif,Indonesia (Lokal Batam)
+102,PT Prabowo Indonesia,Jasa & Ritel,Jepang
+103,PT Namaga Indonesia,Jasa & Ritel,Singapura
+104,PT Pangestu Indonesia,Manufaktur,Jepang
+105,PT Saragih Indonesia,Logistik,Singapura
+106,PT Wacana Indonesia,Elektronik,Singapura
+107,PT Winarsih Indonesia,Otomotif,Malaysia
+108,PT Yulianti Indonesia,Jasa & Ritel,Malaysia
+109,,Marine/Shipyard,Korea Selatan
+110,PT Farida Indonesia,Elektronik,Singapura
+111,PT Prayoga Prasetyo (Persero) Tbk Batam,Manufaktur,Indonesia (Lokal Batam)
+112,PT Sirait Indonesia,Jasa & Ritel,Malaysia
+113,PT Damanik Indonesia,Manufaktur,Jepang
+114,PT Rahmawati Indonesia,Manufaktur,Taiwan
+115,PT Puspasari Indonesia,Jasa & Ritel,Korea Selatan
+116,PT Pradana Indonesia,Marine/Shipyard,Taiwan
+117,PT Rahmawati Indonesia,Marine/Shipyard,Malaysia
+118,PT Prasetya Indonesia,Manufaktur,Taiwan
+119,PT Ardianto Indonesia,Marine/Shipyard,Jepang
+120,PT Hidayanto Indonesia,Plastik & Molding,Singapura
+121,PT Usamah Indonesia,Otomotif,Taiwan
+122,PT Halim Indonesia,Plastik & Molding,Malaysia
+123,PT Pradana Indonesia,Elektronik,Malaysia
+124,PT Hidayat Indonesia,Plastik & Molding,Taiwan
+125,PT Firmansyah Indonesia,Marine/Shipyard,Singapura
+126,PT Sitompul Indonesia,Jasa & Ritel,Taiwan
+127,PT Hidayanto Indonesia,Plastik & Molding,Taiwan
+128,PT Mulyani Indonesia,Jasa & Ritel,Singapura
+129,PT Prakasa Indonesia,LOGISTIK ,Singapura
+130,PT Setiawan Indonesia,Otomotif,Korea Selatan
+131,PT Winarsih Indonesia,Otomotif,Taiwan
+132,PT Laksita Indonesia,Otomotif,Jepang
+133,Perum Mustofa Pertiwi Batam,Marine/Shipyard,Indonesia (Lokal Batam)
+134,PT Permata Indonesia,Manufaktur,Jepang
+135,PT Kusmawati Indonesia,Marine/Shipyard,Korea Selatan
+136,PD Wasita Nainggolan Batam,Jasa & Ritel,Indonesia (Lokal Batam)
+137,PT Kuswoyo Indonesia,Marine/Shipyard,Korea Selatan
+138,PT Kuswoyo Indonesia,Jasa & Ritel,Jepang
+139,PT Wahyuni Indonesia,Plastik & Molding,Jepang
+140,PT Astuti Indonesia,Logistik,Taiwan
+141,PT Thamrin Indonesia,Jasa & Ritel,Singapura
+142,PT Anggraini Indonesia,Jasa & Ritel,Korea Selatan
+143,PD Habibi Wulandari (Persero) Tbk Batam,Otomotif,Indonesia (Lokal Batam)
+144,PT Halim Indonesia,Elektronik,Malaysia
+145,PT Waskita Indonesia,Logistik,Singapura
+146,PT Prayoga (Persero) Tbk Batam,Logistik,Indonesia (Lokal Batam)
+147,PT Nainggolan Indonesia,Otomotif,Jepang
+148,,Otomotif,Korea Selatan
+149,,Jasa & Ritel,Korea Selatan
+150,PT Mandala Indonesia,Elektronik,Malaysia
 
 --- AKHIR LAPORAN TENANT ---
-Total Tenant Terdaftar: 100
+Total Tenant Terdaftar: 150
 Dicetak secara otomatis oleh sistem master data.

@@ -27,7 +27,7 @@ def format_indo_numeric(val, add_symbol=True):
 # 1. Generate Data Tenant (Fokus Ekosistem Industri Batam)
 def generate_tenant_data(num_records):
     tenants = []
-    sektor_options = ['Manufaktur', 'Logistik', 'Elektronik', 'Otomotif', 'Plastik & Molding', 'Marine/Shipyard']
+    sektor_options = ['Manufaktur', 'Logistik', 'Elektronik', 'Otomotif', 'Plastik & Molding', 'Marine/Shipyard', 'Jasa & Ritel']
     # Negara-negara yang umum punya pabrik di Batam
     negara_options = ['Indonesia (Lokal Batam)', 'Singapura', 'Malaysia', 'Jepang', 'Korea Selatan', 'Taiwan']
     
@@ -59,20 +59,97 @@ def generate_tenant_data(num_records):
 def generate_transaksi_data(tenant_df):
     transaksi = []
     
-    # Membuat daftar bulan historis selama 24 bulan (Juni 2024 s/d Mei 2026)
+    # Pre-assign leases to maintain stable property tenancy (reproducible seed)
+    random.seed(42)
+    
+    # 332 properties:
+    # 1 to 250: Factories (Pabrik)
+    # 251 to 332: Rukos (Ruko)
+    factory_units = list(range(1, 251))
+    ruko_units = list(range(251, 333))
+    
+    random.shuffle(factory_units)
+    random.shuffle(ruko_units)
+    
+    leases = []
+    # Loop over tenants to assign them a leased property based on their sector
+    for _, row in tenant_df.iterrows():
+        tenant_id = int(row['tenant_id'])
+        sektor_raw = str(row['sektor_industri'])
+        # Clean sector name to detect type
+        sektor_clean = sektor_raw.strip().replace('mnfktur', 'Manufaktur').replace('LOGISTIK', 'Logistik').replace('elektronika', 'Elektronik')
+        
+        if sektor_clean == 'Jasa & Ritel':
+            # Needs a Ruko
+            if ruko_units:
+                properti_id = ruko_units.pop(0)
+            else:
+                properti_id = random.randint(251, 332)
+            leases.append((tenant_id, properti_id))
+        elif sektor_clean == 'Logistik':
+            # Logistics can lease factory/warehouse or ruko (80/20 split)
+            if random.random() < 0.8:
+                if factory_units:
+                    properti_id = factory_units.pop(0)
+                else:
+                    properti_id = random.randint(1, 250)
+            else:
+                if ruko_units:
+                    properti_id = ruko_units.pop(0)
+                else:
+                    properti_id = random.randint(251, 332)
+            leases.append((tenant_id, properti_id))
+        else:
+            # Factories/Manufaktur/etc.
+            if factory_units:
+                properti_id = factory_units.pop(0)
+            else:
+                properti_id = random.randint(1, 250)
+            leases.append((tenant_id, properti_id))
+            
+    # Assign some large tenants (e.g. 10%) to a second property of the same type
+    tenant_ids = tenant_df['tenant_id'].tolist()
+    for tenant_id in random.sample(tenant_ids, int(len(tenant_ids) * 0.1)):
+        # Find their existing properti_id type
+        primary_prop = [p for t, p in leases if t == tenant_id][0]
+        if primary_prop <= 250:
+            if factory_units:
+                second_prop = factory_units.pop(0)
+            else:
+                second_prop = random.randint(1, 250)
+        else:
+            if ruko_units:
+                second_prop = ruko_units.pop(0)
+            else:
+                second_prop = random.randint(251, 332)
+        leases.append((tenant_id, second_prop))
+
+    # Reset seed to 42 for generating the transactions so that values are reproducible
+    random.seed(42)
+    
+    # 36 months (June 2023 to May 2026)
     months = []
-    for year in [2024, 2025, 2026]:
+    for year in [2023, 2024, 2025, 2026]:
         for month in range(1, 13):
-            if (year == 2024 and month >= 6) or (year == 2025) or (year == 2026 and month <= 5):
+            if (year == 2023 and month >= 6) or (year in [2024, 2025]) or (year == 2026 and month <= 5):
                 months.append((year, month))
                 
     trx_id_counter = 1
     
     for year, month in months:
-        for tenant_id in tenant_df['tenant_id'].tolist():
-            pemakaian_listrik = round(random.uniform(1000.0, 50000.0), 2)
-            # Menentukan pemakaian air secara acak (gudang/ruko sedikit, pabrik banyak)
-            pemakaian_air = round(random.uniform(100.0, 500.0) if random.random() > 0.1 else random.uniform(1000.0, 5000.0), 2)
+        for tenant_id, properti_id in leases:
+            # Check properti type to determine realistic usage scale
+            is_factory = properti_id <= 250
+            if is_factory:
+                # Factory ranges: high usage
+                pemakaian_listrik = round(random.uniform(5000.0, 45000.0), 2)
+                pemakaian_air = round(random.uniform(500.0, 3000.0), 2)
+                service_charge_base = random.choice([5000000, 7500000, 10000000])
+            else:
+                # Ruko ranges: lower usage
+                pemakaian_listrik = round(random.uniform(200.0, 2000.0), 2)
+                pemakaian_air = round(random.uniform(20.0, 150.0), 2)
+                service_charge_base = random.choice([1500000, 2500000, 3500000])
             
             # Skenario Data Kotor #2: 5% data pemakaian listrik bernilai negatif (tidak valid)
             if random.random() < 0.05:
@@ -103,7 +180,6 @@ def generate_transaksi_data(tenant_df):
                 if random.random() < 0.8:
                     air_val = format_indo_numeric(air_val, add_symbol=False) # Air biasanya tidak pakai Rp. tapi ribuan desimal lokal
                     
-            service_charge_base = random.choice([5000000, 7500000, 10000000])
             if random.random() < 0.8:
                 service_charge_base = format_indo_numeric(service_charge_base, add_symbol=True)
             
@@ -124,7 +200,7 @@ def generate_transaksi_data(tenant_df):
                 'trx_id': trx_id,
                 'tanggal': tanggal_str,
                 'tenant_id': tenant_id,
-                'properti_id': random.randint(1, 20),
+                'properti_id': properti_id,
                 'pemakaian_listrik': listrik_val,
                 'pemakaian_air': air_val,
                 'service_charge_base': service_charge_base
@@ -150,7 +226,7 @@ if __name__ == "__main__":
     print("Generating realistic Batam-centric utility data with Excel report headers/footers & Rupiah formats...")
     
     # 1. Generate Tenant Data
-    df_tenant = generate_tenant_data(100)
+    df_tenant = generate_tenant_data(150)
     tenant_titles = [
         "LAPORAN DATA TENANT KAWASAN INDUSTRI TUNAS BATAM",
         "Periode Ekspor Laporan: Mei 2026",
@@ -169,7 +245,7 @@ if __name__ == "__main__":
     transaksi_titles = [
         "LAPORAN HISTORIS PENGGUNAAN UTILITAS (LISTRIK DAN AIR)",
         "Kawasan Industri Tunas Batam Centre",
-        "Periode Billing: Juni 2024 s/d Mei 2026",
+        "Periode Billing: Juni 2023 s/d Mei 2026",
         ""
     ]
     transaksi_footers = [
